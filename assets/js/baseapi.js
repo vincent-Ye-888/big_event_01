@@ -24,7 +24,7 @@ $.ajaxPrefilter(function(options){
     //3.拦截所有响应,判断身份认证信息
     //无论请求成功与否,都会执行complete
     options.complete=function(res){
-        console.log(res.responseJSON);
+        // console.log(res.responseJSON);
         //判断如果状态码是1,或者信息提示"身份验证失败！"就会阻止访问
         if(res.responseJSON.status == 1 && res.responseJSON.message === "身份认证失败！"){
             //跳转到登录页面,摧毁token
