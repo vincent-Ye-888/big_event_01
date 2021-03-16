@@ -1,4 +1,4 @@
-//
+//window.onload 外部的文件和图片/音频/视频...全部加载完毕再执行
 $(window).on('load',function(){
     // 1.1 获取裁剪区域的 DOM 元素
         var $image = $('#image')
@@ -19,7 +19,7 @@ $(window).on('load',function(){
     });
     // 3.修改裁剪区域
     $('#file').on('change',function(e){
-        //e.target 如果此事件为冒泡执行,e.target
+        //e.target 如果此事件为冒泡执行,e.target指向的就是目标阶段的事件源
         var file = e.target.files[0];
         //非空校验
         if(file == undefined){
