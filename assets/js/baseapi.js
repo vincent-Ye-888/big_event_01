@@ -2,11 +2,11 @@
 //   接收到 ajax 响应后,也会触动这个方法
 
 //1.开发环境服务器地址
-var baseURL = 'http://api-breakingnews-web.itheima.net/';
+// var baseURL = 'http://api-breakingnews-web.itheima.net';
 //2.测试环境服务器地址
-// var baseURL = 'http://api-breakingnews-web.itheima.net/';
+var baseURL = 'http://api-breakingnews-web.itheima.net';
 //3.生产环境服务器地址
-// var baseURL = 'http://api-breakingnews-web.itheima.net/';
+// var baseURL = 'http://api-breakingnews-web.itheima.net';
 
 //拦截所有ajax请求并处理参数
 $.ajaxPrefilter(function(options){

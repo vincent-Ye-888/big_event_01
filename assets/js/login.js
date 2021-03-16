@@ -74,7 +74,7 @@ $(function(){
             data: $(this).serialize(),
             dataType:'json',
             success:(res)=>{
-                // console.log(res);
+                console.log(res);
                 //返回状态判定
                 if (res.status != 0){
                     return layer.msg("用户名或密码错误", {icon: 5});
